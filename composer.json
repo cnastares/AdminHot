@@ -81,7 +81,8 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ],
-        "pre-autoload-dump": "Google\\Task\\Composer::cleanup"
+        "pre-autoload-dump": "Google\\Task\\Composer::cleanup",
+        "docs": "php artisan scribe:generate"
     },
     "extra": {
         "laravel": {
