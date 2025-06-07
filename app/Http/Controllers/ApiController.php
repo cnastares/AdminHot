@@ -73,6 +73,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getSystemSettings
+     *
+     * @group Misc
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getSystemSettings(Request $request) {
         try {
             $settings = Setting::select(['name', 'value', 'type']);
@@ -107,6 +116,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * userSignup
+     *
+     * @group Authentication
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function userSignup(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
@@ -186,6 +204,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * updateProfile
+     *
+     * @group Users
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function updateProfile(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
@@ -224,6 +251,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getPackage
+     *
+     * @group Packages
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getPackage(Request $request) {
         $validator = Validator::make($request->toArray(), [
             'platform' => 'nullable|in:android,ios',
@@ -265,6 +301,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * assignFreePackage
+     *
+     * @group Packages
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function assignFreePackage(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
@@ -297,6 +342,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getLimits
+     *
+     * @group Packages
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getLimits(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
@@ -322,6 +376,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * addItem
+     *
+     * @group Items
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function addItem(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
@@ -460,6 +523,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getItem
+     *
+     * @group Items
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getItem(Request $request) {
         $validator = Validator::make($request->all(), [
             'limit'         => 'nullable|integer',
@@ -697,6 +769,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * updateItem
+     *
+     * @group Items
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function updateItem(Request $request) {
         $validator = Validator::make($request->all(), [
             'id'                   => 'required',
@@ -823,6 +904,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * deleteItem
+     *
+     * @group Items
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function deleteItem(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
@@ -848,6 +938,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * updateItemStatus
+     *
+     * @group Items
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function updateItemStatus(Request $request) {
         $validator = Validator::make($request->all(), [
             'item_id' => 'required|integer',
@@ -884,6 +983,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getItemBuyerList
+     *
+     * @group Items
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getItemBuyerList(Request $request) {
         $validator = Validator::make($request->all(), [
             'item_id' => 'required|integer'
@@ -902,6 +1010,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getSubCategories
+     *
+     * @group Misc
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getSubCategories(Request $request) {
         $validator = Validator::make($request->all(), [
             'category_id' => 'nullable|integer'
@@ -959,6 +1076,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getParentCategoryTree
+     *
+     * @group General
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getParentCategoryTree(Request $request) {
         $validator = Validator::make($request->all(), [
             'child_category_id' => 'nullable|integer',
@@ -988,6 +1114,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getNotificationList
+     *
+     * @group Notifications
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getNotificationList() {
         try {
             $notifications = Notifications::whereRaw("FIND_IN_SET(" . Auth::user()->id . ",user_id)")->orWhere('send_to', 'all')->orderBy('id', 'DESC')->paginate();
@@ -998,6 +1133,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getLanguages
+     *
+     * @group General
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getLanguages(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
@@ -1034,6 +1178,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * appPaymentStatus
+     *
+     * @group Payments
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function appPaymentStatus(Request $request) {
         try {
             $paypalInfo = $request->all();
@@ -1050,6 +1203,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getPaymentSettings
+     *
+     * @group Payments
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getPaymentSettings() {
         try {
             $result = PaymentConfiguration::select(['currency_code', 'payment_method', 'api_key', 'status'])->where('status', 1)->get();
@@ -1078,6 +1240,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getCustomFields
+     *
+     * @group Misc
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getCustomFields(Request $request) {
         try {
             $customField = CustomField::whereHas('custom_field_category', function ($q) use ($request) {
@@ -1090,6 +1261,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * makeFeaturedItem
+     *
+     * @group Items
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function makeFeaturedItem(Request $request) {
         $validator = Validator::make($request->all(), [
             'item_id' => 'required|integer',
@@ -1137,6 +1317,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * manageFavourite
+     *
+     * @group Misc
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function manageFavourite(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
@@ -1162,6 +1351,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getFavouriteItem
+     *
+     * @group Items
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getFavouriteItem(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
@@ -1181,6 +1379,15 @@ class ApiController extends Controller {
             ResponseService::errorResponse();
         }
     }
+    /**
+     * getSlider
+     *
+     * @group Misc
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getSlider() {
         try {
             $rows = Slider::with(['model' => function (MorphTo $morphTo) {
@@ -1205,6 +1412,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getReportReasons
+     *
+     * @group Reports
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getReportReasons(Request $request) {
         try {
             $report_reason = new ReportReason();
@@ -1221,6 +1437,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * addReports
+     *
+     * @group Reports
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function addReports(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
@@ -1248,6 +1473,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * setItemTotalClick
+     *
+     * @group Items
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function setItemTotalClick(Request $request) {
         try {
 
@@ -1266,6 +1500,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getFeaturedSection
+     *
+     * @group Misc
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getFeaturedSection(Request $request) {
         try {
             $featureSection = FeatureSection::orderBy('sequence', 'ASC');
@@ -1355,6 +1598,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getPaymentIntent
+     *
+     * @group Payments
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getPaymentIntent(Request $request) {
         $validator = Validator::make($request->all(), [
             'package_id'     => 'required',
@@ -1440,6 +1692,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getPaymentTransactions
+     *
+     * @group Payments
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getPaymentTransactions(Request $request) {
         $validator = Validator::make($request->all(), [
             'latest_only' => 'nullable|boolean'
@@ -1478,6 +1739,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * createItemOffer
+     *
+     * @group Items
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function createItemOffer(Request $request) {
 
         $validator = Validator::make($request->all(), [
@@ -1526,6 +1796,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getChatList
+     *
+     * @group Chat
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getChatList(Request $request) {
         $validator = Validator::make($request->all(), [
             'type' => 'required|in:seller,buyer'
@@ -1591,6 +1870,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * sendMessage
+     *
+     * @group Misc
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function sendMessage(Request $request) {
         $validator = Validator::make($request->all(), [
             'item_offer_id' => 'required|integer',
@@ -1694,6 +1982,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getChatMessages
+     *
+     * @group Chat
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getChatMessages(Request $request) {
         $validator = Validator::make($request->all(), [
             'item_offer_id' => 'required',
@@ -1716,6 +2013,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * deleteUser
+     *
+     * @group Users
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function deleteUser() {
         try {
             User::findOrFail(Auth::user()->id)->forceDelete();
@@ -1726,6 +2032,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * inAppPurchase
+     *
+     * @group Payments
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function inAppPurchase(Request $request) {
         $validator = Validator::make($request->all(), [
             'purchase_token' => 'required',
@@ -1766,6 +2081,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * blockUser
+     *
+     * @group Misc
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function blockUser(Request $request) {
         $validator = Validator::make($request->all(), [
             'blocked_user_id' => 'required|integer',
@@ -1785,6 +2109,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * unblockUser
+     *
+     * @group Misc
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function unblockUser(Request $request) {
         $validator = Validator::make($request->all(), [
             'blocked_user_id' => 'required|integer',
@@ -1804,6 +2137,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getBlockedUsers
+     *
+     * @group Misc
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getBlockedUsers() {
         try {
             $blockedUsers = BlockUser::where('user_id', Auth::user()->id)->pluck('blocked_user_id');
@@ -1815,6 +2157,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getTips
+     *
+     * @group Blog
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getTips() {
         try {
             $tips = Tip::select(['id', 'description'])->orderBy('sequence', 'ASC')->with('translations')->get();
@@ -1825,6 +2176,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getBlog
+     *
+     * @group Blog
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getBlog(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
@@ -1870,6 +2230,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getCountries
+     *
+     * @group Misc
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getCountries(Request $request) {
         try {
             $searchQuery = $request->search ?? '';
@@ -1882,6 +2251,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getStates
+     *
+     * @group General
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getStates(Request $request) {
         $validator = Validator::make($request->all(), [
             'country_id' => 'nullable|integer',
@@ -1911,6 +2289,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getCities
+     *
+     * @group Misc
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getCities(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
@@ -1939,6 +2326,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getAreas
+     *
+     * @group General
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getAreas(Request $request) {
         $validator = Validator::make($request->all(), [
             'city_id' => 'nullable|integer',
@@ -1963,6 +2359,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getFaqs
+     *
+     * @group General
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getFaqs() {
         try {
             $faqs = Faq::get();
@@ -1974,6 +2379,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getAllBlogTags
+     *
+     * @group Blog
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getAllBlogTags() {
         try {
             $tagsArray = [];
@@ -1993,6 +2407,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * storeContactUs
+     *
+     * @group Contacts
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function storeContactUs(Request $request) {
         $validator = Validator::make($request->all(), [
             'name'    => 'required',
@@ -2014,6 +2437,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * addItemReview
+     *
+     * @group Items
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function addItemReview(Request $request) {
         $validator = Validator::make($request->all(), [
             'review'  => 'nullable|string',
@@ -2050,6 +2482,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getSeller
+     *
+     * @group Misc
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getSeller(Request $request) {
         $request->validate([
             'id' => 'required|integer'
@@ -2083,6 +2524,15 @@ class ApiController extends Controller {
     }
 
 
+    /**
+     * renewItem
+     *
+     * @group Items
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function renewItem(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
@@ -2131,6 +2581,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * getMyReview
+     *
+     * @group Reports
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getMyReview(Request $request) {
         try {
             $ratings = SellerRating::where('seller_id', Auth::user()->id)->with('seller:id,name,profile', 'buyer:id,name,profile', 'item:id,name,price,image,description')->paginate(10);
@@ -2147,6 +2606,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * addReviewReport
+     *
+     * @group Reports
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function addReviewReport(Request $request) {
         $validator = Validator::make($request->all(), [
             'report_reason'    => 'required|string',
@@ -2170,6 +2638,15 @@ class ApiController extends Controller {
     }
 
 
+    /**
+     * getVerificationFields
+     *
+     * @group Verification
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getVerificationFields() {
         try {
             $fields = VerificationField::all();
@@ -2181,6 +2658,15 @@ class ApiController extends Controller {
         }
     }
 
+    /**
+     * sendVerificationRequest
+     *
+     * @group Verification
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function sendVerificationRequest(Request $request) {
         try {
 
@@ -2245,6 +2731,15 @@ class ApiController extends Controller {
     }
 
 
+    /**
+     * getVerificationRequest
+     *
+     * @group Verification
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getVerificationRequest(Request $request) {
         try {
             $verificationRequest = VerificationRequest::with('verification_field_values')->owner()->first();
@@ -2300,6 +2795,15 @@ class ApiController extends Controller {
             ResponseService::errorResponse();
         }
     }
+    /**
+     * seoSettings
+     *
+     * @group General
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function seoSettings(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
@@ -2321,6 +2825,15 @@ class ApiController extends Controller {
             ResponseService::errorResponse();
         }
     }
+    /**
+     * getCategories
+     *
+     * @group Misc
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getCategories(Request $request) {
         $validator = Validator::make($request->all(), [
             'language_code' => 'nullable'
@@ -2345,6 +2858,15 @@ class ApiController extends Controller {
             ResponseService::errorResponse();
         }
     }
+    /**
+     * bankTransferUpdate
+     *
+     * @group Payments
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function bankTransferUpdate(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
@@ -2374,6 +2896,15 @@ class ApiController extends Controller {
             return ResponseService::errorResponse();
         }
     }
+    /**
+     * getOtp
+     *
+     * @group Authentication
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function getOtp(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
@@ -2433,6 +2964,15 @@ class ApiController extends Controller {
             return ResponseService::errorResponse();
         }
     }
+    /**
+     * verifyOtp
+     *
+     * @group Authentication
+     * @authenticated
+     * @urlParam id integer optional
+     * @bodyParam dummy string optional
+     * @response 200 {}
+     */
     public function verifyOtp(Request $request) {
         try {
             $validator = Validator::make($request->all(), [
