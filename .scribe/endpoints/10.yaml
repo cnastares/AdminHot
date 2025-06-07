@@ -1,0 +1,463 @@
+name: General
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/get-languages
+    metadata:
+      groupName: General
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: getLanguages
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+      X-AppApiToken: 4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a
+      X-AppType: docs
+    urlParameters:
+      id:
+        name: id
+        description: optional
+        required: false
+        example: 17
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: 17
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      dummy:
+        name: dummy
+        description: optional
+        required: false
+        example: non
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanBodyParameters:
+      dummy: non
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{}'
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 14Va8cfb6dgZePD3k6vE5ha'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/get-parent-categories
+    metadata:
+      groupName: General
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: getParentCategoryTree
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+      X-AppApiToken: 4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a
+      X-AppType: docs
+    urlParameters:
+      id:
+        name: id
+        description: optional
+        required: false
+        example: 12
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: 12
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      child_category_id:
+        name: child_category_id
+        description: ''
+        required: false
+        example: 5
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+      tree:
+        name: tree
+        description: ''
+        required: false
+        example: true
+        type: boolean
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+      slug:
+        name: slug
+        description: ''
+        required: false
+        example: delectus
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+      dummy:
+        name: dummy
+        description: optional
+        required: false
+        example: ipsa
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanBodyParameters:
+      child_category_id: 5
+      tree: true
+      slug: delectus
+      dummy: ipsa
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{}'
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer va6h5db36kgP1ZDcE4fe8aV'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/faq
+    metadata:
+      groupName: General
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: getFaqs
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+      X-AppApiToken: 4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a
+      X-AppType: docs
+    urlParameters:
+      id:
+        name: id
+        description: optional
+        required: false
+        example: 13
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: 13
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      dummy:
+        name: dummy
+        description: optional
+        required: false
+        example: harum
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanBodyParameters:
+      dummy: harum
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{}'
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer k5hcvbEg8V6f1DZ3Pd4ea6a'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/states
+    metadata:
+      groupName: General
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: getStates
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+      X-AppApiToken: 4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a
+      X-AppType: docs
+    urlParameters:
+      id:
+        name: id
+        description: optional
+        required: false
+        example: 3
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: 3
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      country_id:
+        name: country_id
+        description: ''
+        required: false
+        example: 9
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+      search:
+        name: search
+        description: ''
+        required: false
+        example: adipisci
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+      dummy:
+        name: dummy
+        description: optional
+        required: false
+        example: eligendi
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanBodyParameters:
+      country_id: 9
+      search: adipisci
+      dummy: eligendi
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{}'
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g68fZdbk3Paav4DVEe1c5h'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/areas
+    metadata:
+      groupName: General
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: getAreas
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+      X-AppApiToken: 4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a
+      X-AppType: docs
+    urlParameters:
+      id:
+        name: id
+        description: optional
+        required: false
+        example: 5
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: 5
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      city_id:
+        name: city_id
+        description: ''
+        required: false
+        example: 6
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+      search:
+        name: search
+        description: ''
+        required: false
+        example: null
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+      dummy:
+        name: dummy
+        description: optional
+        required: false
+        example: est
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanBodyParameters:
+      city_id: 6
+      dummy: est
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{}'
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer gZE5Dh6VaaPkfv814cebd63'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/seo-settings
+    metadata:
+      groupName: General
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: seoSettings
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+      X-AppApiToken: 4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a
+      X-AppType: docs
+    urlParameters:
+      id:
+        name: id
+        description: optional
+        required: false
+        example: 5
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: 5
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      dummy:
+        name: dummy
+        description: optional
+        required: false
+        example: reiciendis
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanBodyParameters:
+      dummy: reiciendis
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{}'
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer a56cfPdbEv8143gaeZh6kVD'
+    controller: null
+    method: null
+    route: null
+    custom: []

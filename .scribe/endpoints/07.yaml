@@ -1,0 +1,155 @@
+name: Chat
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/chat-list
+    metadata:
+      groupName: Chat
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: getChatList
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+      X-AppApiToken: 4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a
+      X-AppType: docs
+    urlParameters:
+      id:
+        name: id
+        description: optional
+        required: false
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      type:
+        name: type
+        description: ''
+        required: true
+        example: buyer
+        type: string
+        enumValues:
+          - seller
+          - buyer
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      dummy:
+        name: dummy
+        description: optional
+        required: false
+        example: nihil
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanBodyParameters:
+      type: buyer
+      dummy: nihil
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{}'
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 66hEavcZe8k1fd54VPag3Db'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/chat-messages
+    metadata:
+      groupName: Chat
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: getChatMessages
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+      X-AppApiToken: 4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a
+      X-AppType: docs
+    urlParameters:
+      id:
+        name: id
+        description: optional
+        required: false
+        example: 20
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: 20
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      item_offer_id:
+        name: item_offer_id
+        description: ''
+        required: true
+        example: illum
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      dummy:
+        name: dummy
+        description: optional
+        required: false
+        example: voluptatem
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanBodyParameters:
+      item_offer_id: illum
+      dummy: voluptatem
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{}'
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer a8PZdEaef5gc14k6Dbh3Vv6'
+    controller: null
+    method: null
+    route: null
+    custom: []

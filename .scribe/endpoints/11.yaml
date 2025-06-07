@@ -1,0 +1,195 @@
+name: Blog
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/blogs
+    metadata:
+      groupName: Blog
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: getBlog
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+      X-AppApiToken: 4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a
+      X-AppType: docs
+    urlParameters:
+      id:
+        name: id
+        description: optional
+        required: false
+        example: 13
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: 13
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      dummy:
+        name: dummy
+        description: optional
+        required: false
+        example: explicabo
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanBodyParameters:
+      dummy: explicabo
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{}'
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer ZadEPVvf1g63kDc4he68a5b'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/blog-tags
+    metadata:
+      groupName: Blog
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: getAllBlogTags
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+      X-AppApiToken: 4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a
+      X-AppType: docs
+    urlParameters:
+      id:
+        name: id
+        description: optional
+        required: false
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      dummy:
+        name: dummy
+        description: optional
+        required: false
+        example: quis
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanBodyParameters:
+      dummy: quis
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{}'
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1Da3cf5hbkvEeg6d486VZaP'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/tips
+    metadata:
+      groupName: Blog
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: getTips
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+      X-AppApiToken: 4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a
+      X-AppType: docs
+    urlParameters:
+      id:
+        name: id
+        description: optional
+        required: false
+        example: 7
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: 7
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      dummy:
+        name: dummy
+        description: optional
+        required: false
+        example: et
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanBodyParameters:
+      dummy: et
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{}'
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 863geaP1cZV6kD4bdEv5afh'
+    controller: null
+    method: null
+    route: null
+    custom: []

@@ -1,0 +1,3217 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "http:\/\/127.0.0.1:8000"
+        }
+    ],
+    "info": {
+        "name": "LaraClassifier API Documentation",
+        "_postman_id": "4b9aa6b8-abc5-4bac-a9b0-4679e9236935",
+        "description": "LaraClassifier API specification and documentation.",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Authentication",
+            "description": "",
+            "item": [
+                {
+                    "name": "getOtp",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/get-otp",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/get-otp",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "17",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"voluptas\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "verifyOtp",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/verify-otp",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/verify-otp",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "7",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"aut\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "userSignup",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/user-signup",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/user-signup",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "16",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"non\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blog",
+            "description": "",
+            "item": [
+                {
+                    "name": "getBlog",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/blogs",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/blogs",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "13",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"explicabo\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getAllBlogTags",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/blog-tags",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/blog-tags",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "16",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"quis\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getTips",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/tips",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/tips",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "7",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"et\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Chat",
+            "description": "",
+            "item": [
+                {
+                    "name": "getChatList",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/chat-list",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/chat-list",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"type\":\"buyer\",\"dummy\":\"nihil\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getChatMessages",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/chat-messages",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/chat-messages",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "20",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"item_offer_id\":\"illum\",\"dummy\":\"voluptatem\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Contacts",
+            "description": "",
+            "item": [
+                {
+                    "name": "storeContactUs",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/contact-us",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/contact-us",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "20",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"magni\",\"email\":\"pfunk@example.com\",\"subject\":\"aperiam\",\"message\":\"sapiente\",\"dummy\":\"vel\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "General",
+            "description": "",
+            "item": [
+                {
+                    "name": "getLanguages",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/get-languages",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/get-languages",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "17",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"non\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getParentCategoryTree",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/get-parent-categories",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/get-parent-categories",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "12",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"child_category_id\":5,\"tree\":true,\"slug\":\"delectus\",\"dummy\":\"ipsa\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getFaqs",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/faq",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/faq",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "13",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"harum\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getStates",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/states",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/states",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "3",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"country_id\":9,\"search\":\"adipisci\",\"dummy\":\"eligendi\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getAreas",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/areas",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/areas",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "5",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"city_id\":6,\"dummy\":\"est\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "seoSettings",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/seo-settings",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/seo-settings",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "5",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"reiciendis\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Items",
+            "description": "",
+            "item": [
+                {
+                    "name": "getItem",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/my-items",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/my-items",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "10",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"limit\":3,\"offset\":10,\"sort_by\":\"price-low-to-high\",\"posted_since\":\"within-1-week\",\"dummy\":\"iure\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "addItem",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/add-item",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/add-item",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "13",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"minima\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "updateItem",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/update-item",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/update-item",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "16",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"id\":\"sit\",\"slug\":\"w0i\",\"image\":\"tvioy\",\"custom_field_files\":[\"zvxjqbgicgt\"],\"dummy\":\"magni\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "deleteItem",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/delete-item",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/delete-item",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "9",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"nemo\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "updateItemStatus",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/update-item-status",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/update-item-status",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "12",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"item_id\":4,\"status\":\"active\",\"sold_to\":8,\"dummy\":\"eaque\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getItemBuyerList",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/item-buyer-list",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/item-buyer-list",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "16",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"item_id\":2,\"dummy\":\"ut\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "renewItem",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/renew-item",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/renew-item",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "17",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"nemo\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "makeFeaturedItem",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/make-item-featured",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/make-item-featured",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "2",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"item_id\":3,\"dummy\":\"unde\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getFavouriteItem",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/get-favourite-item",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/get-favourite-item",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "11",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"debitis\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "createItemOffer",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/item-offer",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/item-offer",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "9",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"item_id\":10,\"amount\":25024.35,\"dummy\":\"deleniti\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "addItemReview",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/add-item-review",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/add-item-review",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"review\":\"accusantium\",\"ratings\":1,\"item_id\":\"sint\",\"dummy\":\"enim\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "setItemTotalClick",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/set-item-total-click",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/set-item-total-click",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "18",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"dolor\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getItem",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/get-item",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/get-item",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "14",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"limit\":19,\"offset\":15,\"sort_by\":\"price-low-to-high\",\"posted_since\":\"within-3-month\",\"dummy\":\"libero\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Misc",
+            "description": "",
+            "item": [
+                {
+                    "name": "manageFavourite",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/manage-favourite",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/manage-favourite",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "11",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"delectus\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "sendMessage",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/send-message",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/send-message",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "8",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"item_offer_id\":19,\"file\":\"wjzguuktrwcxa\",\"audio\":\"rkiuxkgs\",\"dummy\":\"et\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "blockUser",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/block-user",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/block-user",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "11",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"blocked_user_id\":3,\"dummy\":\"nobis\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "unblockUser",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/unblock-user",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/unblock-user",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "15",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"blocked_user_id\":4,\"dummy\":\"id\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getBlockedUsers",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/blocked-users",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/blocked-users",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "12",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"rerum\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getSystemSettings",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/get-system-settings",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/get-system-settings",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "8",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"nihil\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getCustomFields",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/get-customfields",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/get-customfields",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "16",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"ea\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getSlider",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/get-slider",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/get-slider",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "18",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"ut\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getSubCategories",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/get-categories",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/get-categories",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "12",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"category_id\":6,\"dummy\":\"voluptatibus\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getFeaturedSection",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/get-featured-section",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/get-featured-section",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "9",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"neque\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getCountries",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/countries",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/countries",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "3",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"rerum\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getCities",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/cities",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/cities",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "3",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"aliquam\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getSeller",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/get-seller",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/get-seller",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "9",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"id\":8,\"dummy\":\"quam\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getCategories",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/get-categories-demo",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/get-categories-demo",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"repellendus\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Notifications",
+            "description": "",
+            "item": [
+                {
+                    "name": "getNotificationList",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/get-notification-list",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/get-notification-list",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "18",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"quo\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Packages",
+            "description": "",
+            "item": [
+                {
+                    "name": "getPackage",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/get-package",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/get-package",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "11",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"platform\":\"android\",\"type\":\"advertisement\",\"dummy\":\"in\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "assignFreePackage",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/assign-free-package",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/assign-free-package",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "8",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"qui\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getLimits",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/get-limits",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/get-limits",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "14",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"voluptatem\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Payments",
+            "description": "",
+            "item": [
+                {
+                    "name": "getPaymentSettings",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/get-payment-settings",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/get-payment-settings",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "3",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"nostrum\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getPaymentIntent",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/payment-intent",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/payment-intent",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "17",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"package_id\":\"officia\",\"payment_method\":\"FlutterWave\",\"platform_type\":\"iure\",\"dummy\":\"veritatis\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getPaymentTransactions",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/payment-transactions",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/payment-transactions",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "11",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"latest_only\":true,\"dummy\":\"atque\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "inAppPurchase",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/in-app-purchase",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/in-app-purchase",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "7",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"purchase_token\":\"quibusdam\",\"payment_method\":\"google\",\"package_id\":17,\"dummy\":\"non\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "bankTransferUpdate",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/bank-transfer-update",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/bank-transfer-update",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "3",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"illo\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "appPaymentStatus",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/app-payment-status",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/app-payment-status",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "12",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"possimus\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Reports",
+            "description": "",
+            "item": [
+                {
+                    "name": "addReports",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/add-reports",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/add-reports",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "3",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"nobis\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getMyReview",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/my-review",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/my-review",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "6",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"vel\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "addReviewReport",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/add-review-report",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/add-review-report",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"report_reason\":\"fugiat\",\"seller_review_id\":\"eligendi\",\"dummy\":\"nemo\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getReportReasons",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/get-report-reasons",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/get-report-reasons",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "15",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"quidem\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Users",
+            "description": "",
+            "item": [
+                {
+                    "name": "updateProfile",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/update-profile",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/update-profile",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "14",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"autem\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "deleteUser",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/delete-user",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/delete-user",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "13",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"quia\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Verification",
+            "description": "",
+            "item": [
+                {
+                    "name": "getVerificationFields",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/verification-fields",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/verification-fields",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "10",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"aut\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "sendVerificationRequest",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/send-verification-request",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/send-verification-request",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"iusto\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getVerificationRequest",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/verification-request",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/verification-request",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "17",
+                                    "description": "optional"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "X-AppApiToken",
+                                "value": "4|GhVqyC3IKko2TFNosm4MyrqmGRfDUu8JS93BMgLo2d0d212a"
+                            },
+                            {
+                                "key": "X-AppType",
+                                "value": "docs"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"dummy\":\"voluptatem\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "bearer",
+        "bearer": [
+            {
+                "key": "Authorization",
+                "type": "string"
+            }
+        ]
+    }
+}
