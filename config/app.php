@@ -198,7 +198,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        //Collective\Html\HtmlServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
         \App\Providers\ViewServiceProvider::class,
 
@@ -216,11 +216,11 @@ return [
     |
     */
 
-    /*'aliases' => Facade::defaultAliases()->merge([
+    'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
-        'Form'     => Collective\Html\FormFacde::class,
-        'html'     => Collective\Html\HtmlFacde::class,
+        'Form'     => Collective\Html\FormFacade::class,
+        'Html'     => Collective\Html\HtmlFacade::class,
         'Paystack' => Unicodeveloper\Paystack\Facades\Paystack::class,
-    ])->toArray(),*/
+    ])->toArray(),
 
 ];
